@@ -45,7 +45,7 @@
         <nav>
         	<ul>
         		<li><a href="index.html">Главня</a></li>
-        		<li><a href="#">Комания</a></li>
+        		<li><a href="#">Компания</a></li>
         		<li><a>Каталог</a></li>
         		<li><a href="#">Новости</a></li>
         		<li><a href="#">Спецпредложения</a></li>
@@ -70,7 +70,52 @@
         
         <div>
           <div>
-            <!--Фильтр-->
+            <form method="get" action="https://echo.htmlacademy.ru">
+              <p>Фильтр:</p>
+              <fieldset>
+                <legend>Цена:</legend>
+                <!--...-->
+              </fieldset>
+              <fieldset>
+                <legend>Производители:</legend>
+                <ul>
+                  <li>
+                    <input class="visually-hidden" type="checkbox" name="bosch" id="bosch" checked>
+                    <label for="bosch">Bosch</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden" type="checkbox" name="interskol" id="interskol">
+                    <label for="interskol">Интерскол</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden" type="checkbox" name="makita" id="makita" checked>
+                    <label for="makita">Makita</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden" type="checkbox" name="dewalt" id="dewalt">
+                    <label for="dewalt">Dewalt</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden" type="checkbox" name="hitachi" id="hitachi">
+                    <label for="hitachi">Hitachi</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Питание:</legend>
+                <ul>
+                  <li>
+                    <input class="visually-hidden" type="radio" name="power" id="accumulator" value="accumulator" checked>
+                    <label for="accumulator">Аккумуляторные</label>
+                  </li>
+                  <li>
+                    <input class="visually-hidden" type="radio" name="power" id="volts" value="volts">
+                    <label for="volts">Сетевые</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button type="submit">Показать</button>
+            </form>
           </div>
 
            <div>
@@ -88,10 +133,10 @@
              </ul>
              <div>
               <a href="#">
-               <span>по возрастанию</span>
+               <span class="visually-hidden">по возрастанию</span>
              </a>
              <a href="#">
-               <span>по убыванию</span>
+               <span class="visually-hidden">по убыванию</span>
              </a>
              </div>
            </div>
