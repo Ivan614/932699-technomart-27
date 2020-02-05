@@ -36,7 +36,7 @@ a {
 }
 
 .header-caption {
-	background-color: #ee3643;
+    background-color: #ee3643;
 	color: #ffffff;
     box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
     font-size: 24px;
@@ -57,16 +57,17 @@ a {
 .button-header-bookmarks,
 .button-header-basket,
 .button-header-order  {
-   min-height: 42px;
-   background-color: #293449;
-   font-size: 17px;
-   line-height: 18px;
-   color: #ffffff;
+    min-height: 42px;
+    background-color: #293449;
+    font-size: 17px;
+    line-height: 18px;
+    color: #ffffff;
 }
 
 .search-field::placeholder {
-   color: #ffffff;
+    color: #ffffff;
 }
+
 
 .button-header-order {
 	background-color: #63a63e;
@@ -268,11 +269,11 @@ legend {
 
 .old-price,
 .price {
-  font-family: 'PT Sans', 'Arial', sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
+   font-family: 'PT Sans', 'Arial', sans-serif;
+   font-size: 17px;
+   line-height: 18px;
+   font-weight: bold;
+   text-transform: uppercase;
 }
 
 .old-price {
@@ -283,11 +284,11 @@ legend {
 
 .button-goods-buy,
 .button-goods-bookmarks {
-  width: 135px;
-  border-radius: 3px;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
+    width: 135px;
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
 .button-goods-buy {
