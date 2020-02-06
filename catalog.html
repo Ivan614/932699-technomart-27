@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>HTML Academy: Техномарт</title>
@@ -9,15 +9,11 @@
 </head>
 <body>
 	<header class="main-header">
-
      <div class="header-top">
-
   		 <a href="index.html" class="header-caption">Техномарт</a>
-
   		 <form action="https://echo.htmlacademy.ru" method="get">
          <input type="search" name="search" id="search-field" class="search-field" placeholder="Поиск:" aria-label="Поиск по сайту">
        </form>
-       
   		 <a href="#" class="button-header-bookmarks">Закладки: 0</a>
   		 <a href="#" class="button-header-basket">Корзина: 0</a>
   		 <a href="#" class="button-header-order">Оформить заказ</a>
@@ -124,11 +120,12 @@
               <button type="submit" class="button-filtr">Показать</button>
             </form>
           </div>
+
          <div class="perforators-list">
            <div class="perforators-sort">
               <p>Сортировка:</p>
              <ul class="sort-list list">
-               <li class="sort-item">
+               <li class="sort-item sort-item-active">
                  <a href="#">по цене</a>
                </li>
                <li class="sort-item">
@@ -254,28 +251,28 @@
   				</li>
   			</ul>
 
-        <ul>
-          <li>
+        <ul class="perforator-page-list list">
+          <li class="perforators-page-item perforators-page-item-active">
             <a href="#">1</a>
           </li>
-          <li>
+          <li class="perforators-page-item">
             <a href="#">2</a>
           </li>
-          <li>
+          <li class="perforators-page-item">
             <a href="#">3</a>
           </li>
-          <li>
+          <li class="perforators-page-item perforators-page-item-next">
             <a href="#">Следующая</a>
           </li>
         </ul>
       </div>
   		</section>
 
-      <div>
-        <p>
+      <div class="about-perforators">
+        <p class="about-perforators-caption">
           Пара слов о перфораторах:
         </p>
-        <p>
+        <p class="about-perforators-text">
           Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
           кирпиче, бетоне и камне.<br>
           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции
