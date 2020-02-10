@@ -7,6 +7,7 @@ body {
     background-color: #ffffff;
     font-size: 14px;
     line-height: 24px;
+    min-width: 960px;
 }
 
 a {
@@ -34,6 +35,8 @@ a {
     background-color: #293449;
     color: #ffffff;
     height: 42px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .header-caption {
@@ -189,6 +192,8 @@ a {
 .main-menu-wrapper {
 	margin: 0 auto;
 	width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .main-menu {
@@ -432,13 +437,13 @@ a {
 
 
 .perforators h2 {
-	width: 940px;
+	width: 910px;
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
 	background-color: #f2f6f8;
 	color: #32425c;
-    padding-left: 20px;
+    padding-left: 30px;
     padding-top: 32px;
     padding-bottom: 34px;
 }
@@ -840,6 +845,8 @@ legend {
 	justify-content: space-between;
 	margin: 0 auto;
 	width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .header-content-wrapper {
@@ -847,6 +854,8 @@ legend {
 	justify-content: space-between;
 	margin: 0 auto;
 	width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
@@ -861,6 +870,8 @@ legend {
 	width: 940px;
 	margin: 0 auto;
 	margin-bottom: 80px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 /* Footer */
@@ -873,6 +884,8 @@ legend {
 	margin: 0 auto;
 	min-height: 193px;
 	width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .footer-menu,
@@ -897,6 +910,8 @@ legend {
 	justify-content: space-between;
 	margin: 0 auto;
 	width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .footer-content-wrapper {
@@ -908,6 +923,8 @@ legend {
 .perforators-wrapper {
 	margin: 0 auto;
 	width: 940px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .breadcrumbs-nav-list {
