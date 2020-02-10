@@ -942,6 +942,8 @@ legend {
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
