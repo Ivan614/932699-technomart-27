@@ -33,18 +33,20 @@ a {
     margin: 0 auto;
     background-color: #293449;
     color: #ffffff;
+    height: 42px;
 }
 
 .header-caption {
+	display: flex;
+	align-items: center;
+	justify-content: center;
     background-color: #ee3643;
 	color: #ffffff;
     box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
     font-size: 24px;
-    text-align: center;
     text-transform: uppercase;
     width: 220px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 47px;
 }
 
 .search-field {
@@ -57,11 +59,14 @@ a {
 .button-header-bookmarks,
 .button-header-basket,
 .button-header-order  {
-    min-height: 42px;
+    height: 42px;
     background-color: #293449;
     font-size: 17px;
     line-height: 18px;
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search-field::placeholder {
@@ -95,6 +100,8 @@ a {
 	line-height: 23px;
 	font-weight: normal;
 	padding-top: 50px;
+	margin-left: 50px;
+	margin-top: -1px;
 }
 
 .header-contacts {
@@ -103,29 +110,33 @@ a {
 }
 
 .header-contacts a {
-	width: 270px;
+	width: 262px;
 	color: #ee3643;
 	font-size: 21px;
 	line-height: 21px;
 	border: 3px solid #ffffff;
-	padding-left: 70px;
+	text-align: center;
+	padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 .header-contacts p {
-	width: 250px;
 	color: #32425c;
 	font-size: 14px;
 	line-height: 24px;
 	margin: 0;
 	padding-top: 2px;
-	padding-left: 10px;
+	text-align: center;
 }
 
 .user-login {
 	width: 300px;
 	padding-top: 46px;
+}
+
+.header-login {
+	margin-top: 46px;
 }
 
 .user-enter,
@@ -141,13 +152,18 @@ a {
 
 .user-enter {
 	width: 121px;
-    padding-left: 47px;
+	text-align: center;
+    padding-left: 10px;
     margin-right: 10px;
 }
 
 .user-registration {
 	width: 150px;
 	text-align: center;
+}
+
+.account-hidden {
+	margin-top: 46px;
 }
 
 .account-inner {
@@ -170,7 +186,12 @@ a {
 
 /* main-menu */
 
-.main-menu-wrap {
+.main-menu-wrapper {
+	margin: 0 auto;
+	width: 940px;
+}
+
+.main-menu {
     background-color: #32425c;
     box-shadow: inset 0 -5px 0 #293449;
 }
@@ -180,12 +201,12 @@ a {
 }
 
 .main-menu-item a {
-	height: 60px;
 	padding-left: 30px;
     padding-right: 31px;
     font-size: 17px;
     color: #ffffff;
-    padding-top: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     line-height: 17px;
 }
 
@@ -395,19 +416,8 @@ a {
 
 /* --main catalog-- */
 
-.perforators h2 {
-	font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
-	width: 940px;
-	background-color: #f2f6f8;
-	color: #32425c;
-	padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 20px;
-}
-
 .breadcrumbs-nav-list {
+	width: 360px;
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-size: 13px;
     line-height: 18px;
@@ -420,6 +430,19 @@ a {
 	margin-top: 20px;
 }
 
+
+.perforators h2 {
+	width: 940px;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	background-color: #f2f6f8;
+	color: #32425c;
+    padding-left: 20px;
+    padding-top: 32px;
+    padding-bottom: 34px;
+}
+
 /* filtr*/
 
 .filtr-caption {
@@ -429,6 +452,8 @@ a {
 	line-height: 18px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	text-transform: uppercase;
+	padding-left: 10px;
 	border-radius: 3px;
 }
 
@@ -468,6 +493,7 @@ legend {
     background-color: #ffffff;
     padding-top: 5px;
     padding-bottom: 5px;
+    margin-top: 83px;
     text-transform: uppercase;
     text-align: center;
     border-radius: 3px;
@@ -503,51 +529,6 @@ legend {
 	color: #ee3643;
 }
 
-/* perforator-page-list */
-
-.perforators-page-item a {
-	font-family: 'PT Sans', 'Arial', sans-serif;
-	width: 38px;
-	font-size: 13px;
-	line-height: 18px;
-	text-align: center;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	border-radius: 3px;
-	border: 1px solid #e5e5e5;
-	text-transform: uppercase;
-}
-
-.perforators-page-item-active a {
-	color: #ffffff;
-	background-color: #ee3643;
-}
-
-.perforators-page-item-next a {
-	width: 140px;
-}
-
-/* about perforators */
-
-.about-perforators {
-	background-color: #f2f6f8;
-}
-
-.about-perforators-caption {
-	font-size: 30px;
-	line-height: 30px;
-	text-transform: uppercase;
-	padding-top: 66px; 
-}
-
-.about-perforators-text {
-	width: 911px;
-	font-family: 'PT Sans', 'Arial', sans-serif;
-	font-size: 13px;
-	line-height: 24px;
-	padding-bottom: 76px;
-}
-
 /* perforators-model-list */
 
 .perforators-model-list h3 {
@@ -558,6 +539,17 @@ legend {
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 20px;
+}
+
+.perforators-model-item {
+	width: 220px;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 20px;
+	margin-right: 20px;
+}
+
+.perforators-model-item:nth-child(3n) {
+	margin-right: 0;
 }
 
 .old-price,
@@ -602,6 +594,53 @@ legend {
 }
 
 
+/* perforator-page-list */
+
+.perforators-page-item a {
+	font-family: 'PT Sans', 'Arial', sans-serif;
+	width: 38px;
+	font-size: 13px;
+	line-height: 18px;
+	text-align: center;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-radius: 3px;
+	border: 1px solid #e5e5e5;
+	text-transform: uppercase;
+}
+
+.perforators-page-item-active a {
+	color: #ffffff;
+	background-color: #ee3643;
+}
+
+.perforators-page-item-next a {
+	width: 140px;
+}
+
+/* about perforators */
+
+.about-perforators {
+	background-color: #f2f6f8;
+	margin-bottom: -10px;
+}
+
+.about-perforators-caption {
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	padding-top: 66px; 
+}
+
+.about-perforators-text {
+	width: 911px;
+	font-family: 'PT Sans', 'Arial', sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	padding-bottom: 76px;
+}
+
+
 /* company and contacts */
 
 .company {
@@ -633,6 +672,10 @@ legend {
 	margin-top: 24px;
 	width: 395px;
 	margin-bottom: 20px
+}
+
+.contacts {
+	width: 300px;
 }
 
 .contacts p {
@@ -684,6 +727,7 @@ legend {
 	background-color: #32425c;
 }
 
+
 .footer-caption {
 	background-color: #ee3643;
 	color: #ffffff;
@@ -707,6 +751,7 @@ legend {
 }
 
 .footer-contacts {
+	width: 322px;
 	padding-top: 32px;
 	padding-left: 4px;
 	margin-bottom: 49px;
@@ -731,8 +776,7 @@ legend {
 	margin-left: 3px;
 }
 
-.fuuter-catalog {
-	margin-top: 41px;
+.footer-catalog {
 	margin-left: 26px;
 }
 
@@ -752,12 +796,17 @@ legend {
 	background-color: #293449;
 	font-size: 16px;
 	color: #ffffff;
+	padding-top: 40px;
 }
 
 .copyright,
 .feedback-email p,
 .design p {
     margin: 0;
+}
+
+.copyright {
+	width: 228px;
 }
 
 .footer-content a {
@@ -775,10 +824,6 @@ legend {
 
 
 
-
-
-
-
 /* popup */
 .popup-map,
 .form-message,
@@ -787,23 +832,100 @@ legend {
 }
 
 
+ /* Сеточные стили */
+
+/* Header */
+.header-top-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 940px;
+}
+
+.header-content-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 940px;
+}
 
 
+.main-menu-list {
+	display: flex;
+}
 
+/* about-us */
+.about-us-wrap {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
 
+/* Footer */
 
+.footer-page-wrapper {
+	background-color: #32425c;
+}
 
+.footer-page {
+	margin: 0 auto;
+	min-height: 193px;
+	width: 940px;
+}
 
+.footer-menu,
+.footer-catalog {
+	display: flex;
+	justify-content: space-between;
 
+}
 
+.wrap-inner {
+	display: flex;
+	justify-content: space-between;
+}
 
+.wrap {
+	display: flex;
+	flex-direction: column;
+}
 
+.footer-content {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 940px;
+}
 
+.footer-content-wrapper {
+	background-color: #293449;
+}
 
+/* catalog */
 
+.perforators-wrapper {
+	margin: 0 auto;
+	width: 940px;
+}
 
+.breadcrumbs-nav-list {
+	display: flex;
+	justify-content: space-between;
+}
 
+.wrap-inner-catalog {
+	display: flex;
+	justify-content: space-between;
+}
 
+.perforators-model-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
 
 
 
