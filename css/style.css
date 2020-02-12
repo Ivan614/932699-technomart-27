@@ -283,21 +283,24 @@ a {
 }
 
 .slides-catalog {
+	position: relative;
 	float: left;
 	width: 620px;
 	min-height: 266px;
 	margin-left: 0;
-	margin-top: -35px;
 }
 
 .slider-1 h3,
 .slider-2 h3 {
+	position: absolute;
+	top: -10px;
+	left: 20px;
 	font-size: 36px;
 	font-weight: bold;
 	line-height: 36px;
 	text-transform: uppercase;
+	color: #ffffff;
 }
-
 
 .slider-1 h3 {
 	width: 94px;
@@ -309,23 +312,46 @@ a {
 
 .slider-1 p,
 .slider-2 p {
+	position: absolute;
+	top:50px;
+	left: 20px;
+	color: #ffffff;
 	font-size: 18px;
 	line-height: 24px;
 }
 
 .slider-1 p {
-	width: 143px;
+	width: 145px;
 }
 
 .slider-2 p {
-	width: 206px;
+	width: 210px;
+}
+
+.slider-1 {
+
 }
 
 .slider-2 {
 	display: none;
 }
 
+.button-back {
+	position: absolute;
+	top: 120px;
+	left: 20px;
+}
+
+.button-next {
+	position: absolute;
+	top: 120px;
+	right: 20px;
+}
+
 .button-catalog {
+	position: absolute;
+	bottom: 25px;
+	left: 20px;
 	width: 195px;
 	font-size: 14px;
 	line-height: 18px;
@@ -337,6 +363,8 @@ a {
 	padding-bottom: 10px;
 	border-radius: 3px;
 }
+
+/* goods and maker */
 
 .goods-caption,
 .maker-caption {
@@ -424,6 +452,7 @@ a {
 	padding-top: 20px;
 	padding-bottom: 20px;
 	cursor: pointer;
+	border: 0;
 }
 
 .slider-service-button-active {
@@ -489,20 +518,26 @@ a {
     padding-left: 30px;
     padding-top: 32px;
     padding-bottom: 34px;
+    margin-bottom: 30px;
 }
 
 /* filtr*/
 
+.perforators-filtr {
+	margin-top: -13px;
+}
+
 .filtr-caption {
-	width: 220px;
+	width: 200px;
+	height: 38px;
 	background-color: #f7f3ec;
 	font-size: 13px;
 	line-height: 18px;
-	padding-top: 10px;
-	padding-bottom: 10px;
 	text-transform: uppercase;
 	padding-left: 10px;
 	border-radius: 3px;
+	display: flex;
+	align-items: center;
 }
 
 legend {
@@ -550,23 +585,41 @@ legend {
 
 /* perforators-sort */
 
-.perforators-list {
-	width: 700px;
+.main-catalog {
 	margin-left: 20px;
+}
+
+.perforators-list {
+	width: 710px;
+	height: 38px;
+}
+
+.sort-list {
+	display: flex;
+    padding-top: 5px;
+}
+
+.sort-item {
+	padding-left: 60px;
 }
 
 .perforators-sort {
 	background-color: #f7f3ec;
+	border-radius: 3px;
 	display: flex;
+	justify-content: space-between;
 }
 
-
-.perforators-sort p {
+.sort-caption {
 	font-family: 'PT Sans', 'Arial', sans-serif;
 	color: #000000;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
+	padding-left: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0;
 }
 
 .sort-item a {
@@ -582,6 +635,11 @@ legend {
     opacity: 1;
 	border: none;
 	color: #ee3643;
+}
+
+.button-sort {
+	padding-right: 15px;
+	padding-top: 5px;
 }
 
 /* perforators-model-list */
@@ -684,12 +742,13 @@ legend {
 .about-perforators {
 	background-color: #f2f6f8;
 	margin-bottom: -10px;
-	padding-left: 100px;
 }
 
 .about-perforators-wrapper {
-	width: 1200px;
+	width: 940px;
 	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .about-perforators-caption {
