@@ -13,8 +13,11 @@
       <div class="header-top">
       	<div class="header-top-wrapper">
       	 <a class="header-caption">Техномарт</a>
-  		 <form action="https://echo.htmlacademy.ru" method="get">
+  		 <form action="https://echo.htmlacademy.ru" method="get" class="form-search">
   			 <input type="search" name="search" id="search-field" class="search-field" placeholder="Поиск:" aria-label="Поиск по сайту">
+  			 <svg class="search-icon-svg" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+  			 	<path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+  			 </svg>
   		 </form>
   		 <a href="#" class="button-header-bookmarks">Закладки: 0</a>
   		 <a href="#" class="button-header-basket">Корзина: 0</a>
@@ -33,7 +36,10 @@
         	    </p>
       	  	</div>
       	  	<div class="header-login">
-        	<a href="#" class="user-enter">Войти</a>
+        	<a href="#" class="user-enter">Войти
+        	   <svg class="enter-icon-svg" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+        	   </svg>
+        	</a>
         	<a href="#" class="user-registration">Регистрация</a>
            </div>	
       	 </div>
@@ -96,7 +102,6 @@
         </ul>
       </section>
   
-      
       <section class="goods">
         <div class="goods-caption">
           <h2>Популярные товары:</h2>
@@ -110,7 +115,7 @@
               <del>32500 р.</del>
             </p>
             <p class="price">25500 р.</p>
-            <div>
+            <div class="model-item-back">
               <a href="#" class="button-goods-buy">Купить</a>
   			  <a href="#" class="button-goods-bookmarks">В закладки</a>
             </div>
@@ -122,7 +127,7 @@
               <del>22500 р.</del>
             </p>
             <p class="price">15500 р.</p>
-            <div>
+            <div class="model-item-back">
               <a href="#" class="button-goods-buy">Купить</a>
   			  <a href="#" class="button-goods-bookmarks">В закладки</a>
             </div>
@@ -134,17 +139,19 @@
               <del>30500 р.</del>
             </p>
             <p class="price">25500 р.</p>
-            <div>
+            <div class="model-item-back">
               <a href="#" class="button-goods-buy">Купить</a>
   			  <a href="#" class="button-goods-bookmarks">В закладки</a>
             </div>
           </li>
-          <li class="perforators-model-item">
+          <li class="perforators-model-item new-flag">
               <img src="img/perforator-bosch-bfg-2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
             <h3>Перфоратор BOSCH BFG 2000</h3>
-            
+             <p class="old-price price-hidden">
+              <del>12500 р.</del>
+            </p>
             <p class="price">12500 р.</p>
-            <div>
+            <div class="model-item-back">
               <a href="#" class="button-goods-buy">Купить</a>
   			  <a href="#" class="button-goods-bookmarks">В закладки</a>
             </div>
@@ -320,17 +327,17 @@
     			Все права защищены
   			</p>
   			<ul class="socials list">
-    				<li class="socials-item-vk">
+    				<li class="socials-item socials-item-vk">
     				   <a href="#">
     				      <span class="visually-hidden">Вконтакте</span>
     			       </a>
     			   </li>
-    				<li class="socials-item-fb">
+    				<li class="socials-item socials-item-fb">
     				   <a href="#">
     				      <span class="visually-hidden">Фейсбук</span>
     			       </a>
     		        </li>
-    				<li class="socials-item-insta">
+    				<li class="socials-item socials-item-insta">
     					<a href="#">
     					   <span class="visually-hidden">Инстаграм</span>
     				    </a>
@@ -347,6 +354,61 @@
     	  </div>
   		</div>
   	</footer>
+
+  	<section class="popup-map">
+    	<div class="popup-map-wrapper">
+  			<button type="button" class="map-close">
+  				   <span class="visually-hidden">Закрыть</span>
+  			 </button>
+  			 <div class="popup-map-wrap">
+  			   <img src="img/map-popup.png" width="940" height="447" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+  			</div>
+  		</div>
+    </section>
+
+    <section class="form-message">
+    	<form class="form-message-wrapper" action="https://echo.htmlacademy.ru" method="post">
+  				<div class="form-message-inner">
+  					<p class="form-message-name">
+  						<label for="name">Ваше имя:</label>
+  						<input type="text" name="name" id="name" placeholder="Имя Фамилия" class="form-message-item" required>
+  					</p>
+
+  					<p class="form-message-email">
+  						<label for="email">Ваш e-mail:</label>
+  						<input type="email" name="email" id="email" placeholder="email@example.com" class="form-message-item" required>
+  					</p>
+
+  					<p class="form-message-field">
+  					    <label for="field-text">Текст письма:</label>
+  					    <textarea name="field-text" id="field-text" placeholder="В свободной форме" class="form-message-item" required></textarea>
+  					</p>
+  				</div>
+  				<button type="button" class="form-message-close">
+  					<span class="visually-hidden">Закрыть</span>
+  				</button>
+  				<p class="button-form-message-wrap">
+  					<button type="submit" class="button-message-submit">Отправить</button>
+  				</p>
+  			</form>
+    </section>
+
+   <section class="popup-order">
+          <div class="popup-order-inner">
+  			<p>
+  			  Товар добавлен в корзину!
+  			 </p>
+  			</div>
+  			<button type="button" class="popup-order-close">
+                   <span class="visually-hidden">Закрыть</span>
+                </button>
+  			<div class="popup-order-buttons">
+  				<div class="popup-order-buttons-wrap">
+  					<button type="submit" class="button-popup-order-process">Оформить заказ</button>
+  					<a href="#" class="button-popup-order-continue">Продолжить покупки</a>
+  				</div>
+  			</div>
+    </section>
   </body>
 </html>
 
