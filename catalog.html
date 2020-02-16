@@ -92,6 +92,9 @@
               <fieldset class="filtr-price">
                 <legend>Цена:</legend>
                 <div class="filtr-price-pin">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
                   <div class="range-pin range-pin-min"></div>
                   <div class="range-pin range-pin-max"></div>
                 </div>
@@ -109,23 +112,23 @@
                 <legend>Производители:</legend>
                 <ul class="filtr-maker-list list">
                   <li class="filtr-maker-item">
-                    <input class="visually-hidden" type="checkbox" name="bosch" id="bosch" checked>
+                    <input class="filtr-maker-checkbox visually-hidden" type="checkbox" name="bosch" id="bosch" checked>
                     <label for="bosch">Bosch</label>
                   </li>
                   <li class="filtr-maker-item">
-                    <input class="visually-hidden" type="checkbox" name="interskol" id="interskol">
+                    <input class="filtr-maker-checkbox visually-hidden" type="checkbox" name="interskol" id="interskol">
                     <label for="interskol">Интерскол</label>
                   </li>
                   <li class="filtr-maker-item">
-                    <input class="visually-hidden" type="checkbox" name="makita" id="makita" checked>
+                    <input class="filtr-maker-checkbox visually-hidden" type="checkbox" name="makita" id="makita" checked>
                     <label for="makita">Makita</label>
                   </li>
                   <li class="filtr-maker-item">
-                    <input class="visually-hidden" type="checkbox" name="dewalt" id="dewalt">
+                    <input class="filtr-maker-checkbox visually-hidden" type="checkbox" name="dewalt" id="dewalt">
                     <label for="dewalt">Dewalt</label>
                   </li>
                   <li class="filtr-maker-item">
-                    <input class="visually-hidden" type="checkbox" name="hitachi" id="hitachi">
+                    <input class="filtr-maker-checkbox visually-hidden" type="checkbox" name="hitachi" id="hitachi">
                     <label for="hitachi">Hitachi</label>
                   </li>
                 </ul>
@@ -135,11 +138,11 @@
                 <legend>Питание:</legend>
                 <ul class="filtr-power-list list">
                   <li class="filtr-power-item">
-                    <input class="visually-hidden" type="radio" name="power" id="accumulator" value="accumulator" checked>
+                    <input class="filtr-power-radio visually-hidden" type="radio" name="power" id="accumulator" value="accumulator" checked>
                     <label for="accumulator">Аккумуляторные</label>
                   </li>
                   <li class="filtr-power-item">
-                    <input class="visually-hidden" type="radio" name="power" id="volts" value="volts">
+                    <input class="filtr-power-radio visually-hidden" type="radio" name="power" id="volts" value="volts">
                     <label for="volts">Сетевые</label>
                   </li>
                 </ul>
@@ -165,10 +168,10 @@
                </li>
              </ul>
              <div class="button-sort">
-              <a href="#" class="button-sort-increase">
+              <a href="#" class="arrow-button-sort button-sort-increase button-sort-active">
                <span class="visually-hidden">по возрастанию</span>
              </a>
-             <a href="#" class="button-sort-decrease">
+             <a href="#" class="arrow-button-sort button-sort-decrease">
                <span class="visually-hidden">по убыванию</span>
              </a>
              </div>
@@ -359,7 +362,7 @@
        <div class="footer-content-wrapper">
       <div class="footer-content">
         <p class="copyright">
-          &copy; 2010-2019 Комапания &laquo;Техномарт&raquo; 
+          &copy; 2010-2019 Компания &laquo;Техномарт&raquo;<br> 
           Все права защищены
         </p>
         <ul class="socials list">
