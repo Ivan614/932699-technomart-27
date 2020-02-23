@@ -182,6 +182,10 @@ input[type="radio"].visually-hidden {
 	margin-left: -5px;
 }
 
+.button-header-basket-filling {
+	background-color: #ee3643;
+}
+
 /* hover active focus for header-top */
 
 .header-caption:hover {
@@ -445,9 +449,16 @@ input[type="radio"].visually-hidden {
 	fill: #c5c5c5; 
 }
 
-.account-name:hover path,
-.account-name:hover path{
+.account-name:hover path {
 	fill: #32425c;
+}
+
+.account-exit:hover path {
+	fill: #32425c;
+}
+
+.account-exit-svg:active path {
+	fill: #c5c5c5;
 }
 
 .account-name:active {
@@ -1626,6 +1637,7 @@ legend {
 .perforators-model-item {
 	position: relative;
 	width: 220px;
+	min-height: 318px;
 	border: 1px solid #e5e5e5;
 	margin-top: 20px;
 }
@@ -1663,8 +1675,7 @@ legend {
 	width: 67px;
 	color: #a9a9a9;
 	margin: 0 auto;
-	padding-top: 10px;
-	margin-bottom: -10px;
+	padding-top: 15px;
 }
 
 .price-hidden {
@@ -1673,13 +1684,12 @@ legend {
 
 .price {
 	position: relative;
-    width: 75px;
-    margin-right: 52px;
+    width: 70px;
     margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 36px;
-    padding-right: 20px;
+    padding-right: 25px;
     color: #ffffff;
     background-color: #ee3643;
     border-radius: 3px;
@@ -1689,7 +1699,7 @@ legend {
 	content: "";
 	position: absolute;
     bottom: -1px;
-    right: -39px;
+    right: -30px;
     width: 0;
     height: 0;
     border: 20px solid white;
@@ -1829,7 +1839,7 @@ legend {
 
 .about-perforators {
 	background-color: #f2f6f8;
-	margin-bottom: -10px;
+	margin-bottom: -25px;
 }
 
 .about-perforators-wrapper {
@@ -1843,7 +1853,7 @@ legend {
 	font-size: 30px;
 	line-height: 30px;
 	text-transform: uppercase;
-	padding-top: 62px;
+	padding-top: 65px;
 	margin-bottom: 25px;
 }
 
@@ -1852,7 +1862,7 @@ legend {
 	font-family: 'PT Sans', 'Arial', sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	padding-bottom: 65px;
+	padding-bottom: 70px;
 }
 
 
@@ -1963,7 +1973,7 @@ legend {
 /*footer-content*/
 
 .footer-content {
-	min-height: 107px;
+	min-height: 110px;
 	background-color: #293449;
 	font-size: 16px;
 	color: #ffffff;
@@ -2067,9 +2077,9 @@ legend {
 	border: none;
 }
 
-.popup-map-wrap p{
+.popup-map-wrap p {
 	position: absolute;
-	top: 25px;
+	top: 0;
 	left: 20;
 	z-index: 1;
 	margin: 0;
@@ -2081,7 +2091,6 @@ legend {
 	left: 50%; 
 	padding-left: 10px;
 	padding-right: 10px;
-	
 }
 
 .popup-map-wrap {
@@ -2119,7 +2128,7 @@ legend {
 	 align-items: center;
 	-webkit-box-shadow: inset 0px 5px 0 0 #ee3643;
 	box-shadow: inset 0px 5px 0 0 #ee3643;
-	height: 150px;
+	height: 190px;
 }
 
 .popup-order-inner p {
@@ -2137,7 +2146,7 @@ legend {
 	position: absolute;
 	background-image: url(../img/icon-mark.svg);
 	background-repeat: no-repeat;
-	top: 53px;
+	top: 55px;
 	left: 85px;
 	width: 66px;
 	height: 66px;
@@ -2146,7 +2155,8 @@ legend {
 .popup-order-buttons {
 	width: 620px;
 	height: 80px;
-	padding-bottom: 20px;
+	padding-bottom: 25px;
+	padding-top: 10px;
 	background-color: #f1f1f1;	
 }
 
@@ -2196,14 +2206,6 @@ legend {
 	align-items: center;
 }
 
-.popup-order-close,
-.form-message-close,
-.map-close {
-	outline: none;
-	border: 0;
-	background-color: transparent;
-}
-
 .popup-order-close::before,
 .popup-order-close::after,
 .form-message-close::before,
@@ -2229,33 +2231,60 @@ legend {
 }
 
 .map-close::before {
-	top: 40px;
-	right: 15px;
+	top: 10px;
+	right: 0;
 }
 
 .map-close::after {
-	top: 40px;
-	right: 15px;
+	top: 10px;
+	right: 0;
 }
 
 .form-message-close::before {
-	top: 20px;
-	right: 5px;
+	top: 10px;
+	right: 0;
 }
 
 .form-message-close::after {
-	top: 20px;
-	right: 5px;
+	top: 10px;
+	right: 0;
 }
 
 .popup-order-close::before {
-	top: 20px;
-	right: 5px;
+	top: 10px;
+	right: 0;
 }
 
 .popup-order-close::after {
-	top: 20px;
+	top: 10px;
+	right: 0;
+}
+
+.popup-order-close,
+.map-close,
+.form-message-close {
+	position: absolute;
+	background-color: transparent;
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	border: 0;
+}
+
+.popup-order-close {
+	top: 10px;
 	right: 5px;
+}
+
+.form-message-close {
+	top: 10px;
+	right: 5px;
+}
+
+.map-close {
+	top: 10px;
+	right: 15px;
+	z-index: 5; 
 }
 
 /* form-message */
@@ -2377,6 +2406,7 @@ legend {
 	width: 460px;
 	margin: 0 auto;
 	padding-top: 45px;
+	margin-bottom: 20px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;

@@ -31,11 +31,14 @@ buttonMessage.addEventListener("click", function (evt) {
 closeForm.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	formPopup.classList.remove("modal-show");
+	formPopup.classList.remove("modal-error");
 });
 
 form.addEventListener("submit", function (evt) {
 	if (!youName.value || !email.value || !fieldText.value) {
 	   evt.preventDefault();
+	   formPopup.classList.remove("modal-error");
+	   formPopup.offsetWidth = formPopup.offsetWidth;
 	   formPopup.classList.add("modal-error");
     } else {
     	if (isStorageSupport) {
@@ -49,6 +52,7 @@ window.addEventListener("keydown", function (evt) {
 		evt.preventDefault();
 		if (formPopup.classList.contains("modal-show")) {
 			formPopup.classList.remove("modal-show")
+			formPopup.classList.remove("modal-error");
 		}
 	}
 });
