@@ -1400,7 +1400,9 @@ input[type="radio"].visually-hidden {
   background-color: #e5e5e5;
 }
 
-legend {
+ .filtr-price-caption,
+ .filtr-maker-caption,
+ .filtr-power-caption {
   width: 141px;
   color: #000000;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2084,7 +2086,6 @@ legend {
 
 .copyright {
   width: 228px;
-  white-space: nowrap;
   line-height: 18px;
 }
 
